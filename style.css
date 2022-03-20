@@ -1,0 +1,132 @@
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+     :root {
+        --col1: hsl(31, 77%, 52%);
+        --col2: hsl(184, 100%, 22%);
+        --col3: hsl(179, 100%, 13%);
+        --paragraph: hsla(0, 0%, 100%, 0.75);
+        --veryLightGray: hsl(0, 0%, 95%);
+    }
+    
+    html {
+        height: 100%;
+    }
+    
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background-color: var(--veryLightGray);
+        display: flex;
+        height: 100vh;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Lexend Deca';
+        width: 100%;
+    }
+    
+    .container {
+        display: flex;
+        padding: 0 150px;
+        max-height: 600px;
+    }
+    
+    .title {
+        font-family: 'Big Shoulders Display' !important;
+        color: var(--paragraph);
+        margin: 30px 0;
+    }
+    
+    .col {
+        padding: 30px;
+    }
+    
+    .col p {
+        color: var(--paragraph);
+        font-size: 15px;
+        line-height: 40px;
+        margin: 30px 0;
+        height: 200px;
+    }
+    
+    .sedan {
+        background-color: var(--col1);
+    }
+    
+    .suv {
+        background-color: var(--col2);
+    }
+    
+    .luxury {
+        background-color: var(--col3);
+    }
+    
+    .btn {
+        display: inline-block;
+        text-decoration: none;
+        padding: 15px 15px;
+        background-color: var(--paragraph);
+        min-width: 180px;
+        text-align: center;
+        border-radius: 50px;
+    }
+    
+    .btn-sedan {
+        color: var(--col1);
+        border: 3px solid var(--col1);
+    }
+    
+    .btn-sedan:hover {
+        background-color: var(--col1);
+    }
+    
+    .btn-suv {
+        color: var(--col2);
+        border: 3px solid var(--col2);
+    }
+    
+    .btn-suv:hover {
+        background-color: var(--col2);
+    }
+    
+    .btn-luxury {
+        color: var(--col3);
+        border: 3px solid var(--col2);
+    }
+    
+    .btn-luxury:hover {
+        background-color: var(--col3);
+    }
+    
+    .btn:hover {
+        border-color: var(--paragraph);
+        color: var(--paragraph);
+    }
+    
+    @media (max-width:739px) {
+        .container {
+            padding-right: 0;
+            padding-left: 0;
+            display: block;
+        }
+        .col {
+            max-height: 500px;
+            width: 300px;
+            padding: 30px;
+        }
+        /* .col p {
+            min-width: 150px;
+            font-size: 10px;
+            height: 100px;
+        } */
+        .btn {
+            min-width: 200px;
+            font-size: 15px;
+        }
+        body {
+            padding-bottom: 40px;
+        }
+    }
